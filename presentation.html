@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Containers Presentation</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h3>Containers</h3>
+					<p>
+						<img src="img/bus-containers.webp">
+					</p>
+				</section>
+
+				<section>
+					<h2>whoami</h2>
+					<p>
+						<ul>
+							<li>Software Developer
+								<ul>
+									<li>
+										Maintain shared services
+									</li>
+									<li>
+										Service integration
+									</li>
+									<li>
+										Resident cloud guy
+									</li>
+								</ul>
+								<ul></ul>
+							</li>
+							
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h2>What is a container?</h2>
+					<p>
+						<ul>
+							<li>
+								A way to package your application for distribution or deployment
+							</li>
+							<li>
+								Includes an operating system
+							</li>
+							<li>
+								Not a VM
+							</li>
+							<li>
+								Not a replacement for other infrastructure
+								<ul>
+									<li>
+										Load balancers
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h2>Why should a developer care?</h2>
+					<p>
+						<ul>
+							<li>Consistency</li>
+							<li>Portability</li>
+							<li>Scalability</li>
+							<li>Open standard</li>
+							
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h2>Why should a developer care?</h2>
+					<p>
+						<ul>
+							<li>Backbone of cloud deployments
+								<ul>
+									<li>
+										Don't be caught looking at your toes
+									</li>
+									<li>
+										This helps you from looking silly
+									</li>
+									
+								</ul>
+							</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h2>How do I use it?</h2>
+					<p>
+						Setup is simple, and any application can use the tech
+					</p>
+					<p>
+						Create a Dockerfile
+						<img src="img/dockerfile.png">
+					</p>
+				</section>
+				<section>
+					<h2>How do I use it</h2>
+					<p>
+						Docker Build
+						<img src="img/build-output.png">
+					</p>
+				</section>
+				<section>
+					<h2>How do I use it</h2>
+					<p>
+						Docker Run
+					</p>
+					<p>
+						<img src="img/test-running.png">
+					</p>
+				</section>
+				<section>
+					<h2>How do I use it</h2>
+					<p>
+						Docker push
+					</p>
+					<p>
+						
+						<img src="img/docker-push.png">
+					</p>
+					<p>
+						From here, images can be deployed to a variety of services!
+					</p>
+				</section>
+				<section>
+					<h2>Why does my team care?</h2>
+					<p>
+						<ul>
+							<li>
+								Consistency of environment for deployment
+							</li>
+							<li>
+								Distributed cruft
+							</li>
+							<li>
+								Unified knowledge set
+							</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h2>Why does the SVP care?</h2>
+					<p>
+						<ul>
+							<li>
+								Cloud-ready (if necessary)
+							</li>
+							<li>
+								Cost savings
+							</li>
+							<li>
+								Flexibility of deployment
+							</li>
+						</ul>
+					</p>
+						
+				</section>
+				<section>
+					<h2>Is this right for me?</h2>
+					<p>
+						<ul>
+							<li>Is your server load relatively static?</li>
+							<li>Are you running one large application, or many smaller ones?</li>
+							<li>Are you going to manage it yourself?</li>
+							<li>Do you depend on Kerberos/AD authentication?</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h2>Conclusion</h2>
+					<p>
+						<ul>
+							<li>
+								The cloud is build on containers: you better know how to use them
+							</li>
+							<li>
+								Containers allow applications to run more consistently, with easier scaling
+							</li>
+							<li>
+								Containers not only make your application portable, but also your knowledge
+							</li>
+						</ul>
+					</p>
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
